@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+.idea/
+.cursor/
+# Virtualenv
+.venv/
+venv/
+
+# PyInstaller
+proyecto_extraccion_OCR/build/
+proyecto_extraccion_OCR/dist/
+dist/
+build/
+*.spec
+*.ico
+
+# Otros
+*.log
+*.env
+.env
+*.xlsx
+
+# base de datos temp
+*.sqlite3
+db.sqlite3
+data/db.sqlite3
+
