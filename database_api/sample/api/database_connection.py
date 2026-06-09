@@ -33,9 +33,6 @@ class DatabaseConnection:
         return self._connection
 
     def close_connection(self):
-        """
-        Devuelve un cursor reutilizando la conexión singleton.
-        """
         if self._connection and self._connection.is_connected():
             self._connection.close()
             print("Conexión cerrada.")
