@@ -94,4 +94,4 @@ class ProductRepository(ProductRepositoryInterface):
         with connection.cursor() as cursor:
             cursor.execute("DELETE FROM products WHERE id = %s", (product_id,))
             connection.commit()
-            return cursor.rowcount > 0 # True si borró algún registro
+            return cursor.rowcount > 0 # cuántas filas fueron afectadas por la última operación SQL.
