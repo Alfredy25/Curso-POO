@@ -54,6 +54,7 @@ class UserRepositoryImpl(UserRepositoryInterface):
                 WHERE user_id = %s
             """
             values = (user.username, user.password, user.email, user.id)
+            print("Usuario para actualizar: ", user.username)
         else:
             #INSERT
             sql = """
@@ -61,6 +62,7 @@ class UserRepositoryImpl(UserRepositoryInterface):
             VALUES (%s, %s, %s)
             """
             values = (user.username, user.password, user.email)
+            print("Usuario nuevo: ", user.username)
         try:
             with connection.cursor() as cursor:
                 cursor.execute(sql, values)
