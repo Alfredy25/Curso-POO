@@ -8,7 +8,7 @@ class Person(Base):
     id = Column(Integer, primary_key=True, autoincrement=True)
     name =  Column(String(50), nullable=False)
     lastname = Column(String(50), nullable=False)
-    email = Column(String(100),unique=True, nullable=False)
+    email = Column(String(100), unique=True, nullable=False)
     age = Column(Integer)
 
     def __repr__(self):
